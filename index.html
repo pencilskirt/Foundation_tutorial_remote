@@ -6,10 +6,11 @@
     <link href="css/normalize.css" rel="stylesheet" media="screen">
     <link href="css/foundation.css" rel="stylesheet" media="screen">
     <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <script src="js/vendor/custom.modernizr.js"></script>
   </head>
   <body>
 
-    <!-- Top Bar -->
+    <!-- Navigation -->
     <div class="contain-to-grid fixed">    
       <nav class="top-bar">
         <ul class="title-area">
@@ -38,7 +39,7 @@
         </section>
       </nav>
     </div>
-    <!-- End Top Bar -->
+    <!-- End Navigation -->
 
     <!-- Content Slider -->
     <div class="row">
@@ -48,7 +49,7 @@
           <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today.</p>
           <p class="button-group radius">
             <a class="medium button success" href="#">Download the app</a>
-            <a class="medium button hide-for-small">Text me the link</a>
+            <a class="medium button hide-for-small" data-reveal-id="formModal">Text me the link</a>
           </p> 
         </div>
         <div>
@@ -83,16 +84,15 @@
 
     <!-- Treehouse Content -->
     <div class="row">
-
       <hr>
-      <div class="large-6 hide-for-small columns">
+      <div class="large-6 columns hide-for-small">
         <h4>Learn how to make this app</h4>
         <p>We will build on the concepts learned in previous iOS projects to create an app that will allow users to send photo or video messages to other users that will be deleted once viewed.</p>
         <div class="row">
-          <div class="large-6 push-6 columns">
-            <img class="th radius"src="img/thumb.jpg">
+          <div class="large-6 columns">
+            <img class="th radius" data-reveal-id="vidModal" src="img/thumb.jpg">
           </div>
-          <div class="large-6 pull-6 columns">
+          <div class="large-6 columns">
             <p><em>Get access to these courses for only $24 a month!</em></p>
             <p><a href="#">Visit Treehouse Now &raquo;</a></p>
           </div>
@@ -103,17 +103,43 @@
         <p>Treehouse provides an extensive library of step-by-step video courses and training exercises that will give you a wide range of in-demand technology skills that will help you land your next dream job.</p>
         <a href="#" class="medium button success radius">Sign up for Treehouse &raquo;</a>
       </div>
-
     </div><!-- End Treehouse Content -->
 
     <!-- Page Footer -->
     <div class="row">
       <hr>
-      <div class="large-4 large-centered columns">      
+      <div class="small-10 large-4 large-centered columns">      
         <p>&copy; 2013 Ribbit - By Treehouse Island, Inc.</p>
       </div>    
+    </div><!-- End Page Footer -->
+
+    <!-- Form Modal -->
+    <div id="formModal" class="reveal-modal small">
+      <h3>We'll Text You the Link!</h3>
+      <a href="#" class="close-reveal-modal">&#215;</a>
+      <form class="custom">
+        <fieldset>
+          <input type="tel" placeholder="Mobile Phone">
+          <select>
+            <option>iOS</option>
+            <option>Android</option>
+          </select>
+          <button type="submit" class="small button">Text Me!</button>
+        </fieldset>
+      </form> 
     </div>
-    <!-- End Page Footer -->
+    <!-- End Form Modal -->
+
+
+    <!-- Video Modal -->
+
+    <div id="vidModal" class="reveal-modal">
+      <div class="flex-video widescreen">
+        <iframe width="420" height="315" src="http://www.youtube.com/embed/hTf0CgRC1_Q" frameborder="0" allowfullscreen></iframe>
+        <a href="#" class="close-reveal-modal">&#215;</a>
+      </div>
+    </div>
+    <!-- End Video Modal -->
 
     <script>
       document.write('<script src=' +

@@ -10,3 +10,6 @@ This is a site built following Treehouse's tutorial on Foundation.
 
 -Laid out grid columns for content section. Nested grids for 'treehouse 
 content' section. Ordered columns and thumbnails.
+
+-Built Modal window with custom form. Added Flexible Video in widescreen
+format.
