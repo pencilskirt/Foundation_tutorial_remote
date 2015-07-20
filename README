@@ -15,3 +15,6 @@ content' section. Ordered columns and thumbnails.
 format.
 
 -Added Foundation Font Icons.
+
+-Added Interchange Plugin to provide hi-res images for screens with a pixel 
+ratio of 2.
