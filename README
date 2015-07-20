@@ -7,3 +7,6 @@ This is a site built following Treehouse's tutorial on Foundation.
 -Added JS dropdown menu and Orbit slider.
 
 -Built nested grids around featured content.
+
+-Laid out grid columns for content section. Nested grids for 'treehouse 
+content' section. Ordered columns and thumbnails.
